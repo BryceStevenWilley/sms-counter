@@ -2,12 +2,14 @@
 
 **ONLY CONTINUE IF YOU TRUST THE SOURCE OF THIS CODE (me)**. You can verify my identity with Billy and Kelly.
 
+<div id="the_bookmarklet" style="padding: 100px; bakckground: gray; border: 1px solid black; border-radius: 4px">
 Drag this link into your browser's toolbar:<br/>
 <a href="javascript: (function() {
     var gyr_msg_counter_js = document.createElement( 'script' );
     gyr_msg_counter_js.setAttribute( 'src', 'https://plocket.github.io/sms-counter/sms_counter.js' );
     document.body.appendChild( gyr_msg_counter_js );
 })();">SMS Counter for GYR Hub</a>
+</div>
 
 This bookmarklet lets you see an estimate of how many inidividual text messages (sms) your words might send.
 
