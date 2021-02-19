@@ -60,9 +60,9 @@ javascript: (function () {
     numCharsNode.innerText = num;
 
     if ( num > 160 ) {
-      numMsgsNode.innerText = Math.round( (num/153 ) * 100 ) / 100;
+      numMsgsNode.innerText = Math.round( (num/147 ) * 100 ) / 100;
     } else {
-      numMsgsNode.innerText = 1;
+      numMsgsNode.innerText =  Math.round( (num/160 ) * 100 ) / 100;;
     }
   }
 
