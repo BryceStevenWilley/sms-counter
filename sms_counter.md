@@ -2,7 +2,7 @@
 
 **ONLY CONTINUE IF YOU TRUST THE SOURCE OF THIS CODE (me)**. You can verify my identity with Billy and Kelly.
 
-<div id="the_bookmarklet" style="padding: 100px; bakckground: gray; border: 1px solid black; border-radius: 4px">
+<div id="the_bookmarklet" style="padding: 1em; background: rgb(200, 240, 240); border: 1px solid black; border-radius: 4px">
 Drag this link into your browser's toolbar:<br/>
 <a href="javascript: (function() {
     var gyr_msg_counter_js = document.createElement( 'script' );
