@@ -7,7 +7,7 @@
 Drag this link into your browser's toolbar:
 <a href="javascript: (function() {
     var gyr_msg_counter_js = document.createElement( 'script' );
-    gyr_msg_counter_js.setAttribute( 'src', 'https://plocket.github.io/sms-counter/sms-counter.js' );
+    gyr_msg_counter_js.setAttribute( 'src', 'https://plocket.github.io/sms-counter/sms_counter.js' );
     document.body.appendChild( gyr_msg_counter_js );
 })();">SMS Counter for GYR Hub</a>
 
@@ -28,7 +28,7 @@ For reference, this bookmarklet contains the code:
 ```
 javascript: (function() {
     var gyr_msg_counter_js = document.createElement( 'script' );
-    gyr_msg_counter_js.setAttribute( 'src', 'https://plocket.github.io/sms-counter/sms-counter.js' );
+    gyr_msg_counter_js.setAttribute( 'src', 'https://plocket.github.io/sms-counter/sms_counter.js' );
     document.body.appendChild( gyr_msg_counter_js );
 })();
 ```
@@ -50,7 +50,7 @@ Once you have a local server running, create a bookmarklet whose content is
 ```
 javascript: (function() {
     var gyr_msg_counter_js = document.createElement( 'script' );
-    gyr_msg_counter_js.setAttribute( 'src', 'http://localhost:9000/sms-counter.js' );
+    gyr_msg_counter_js.setAttribute( 'src', 'http://localhost:9000/sms_counter.js' );
     document.body.appendChild( gyr_msg_counter_js );
 })();
 ```
