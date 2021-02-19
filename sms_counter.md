@@ -10,7 +10,7 @@ Drag this link into your browser's toolbar:<br/>
     document.body.appendChild( gyr_msg_counter_js );
 })();">SMS Counter for GYR Hub</a>
 </div>
-
+<br/>
 This bookmarklet lets you see an estimate of how many inidividual text messages (sms) your words might send.
 
 Phones split up messages into separate chunks. The charge per message. Some phones mix up the order in which the chunks appear.
