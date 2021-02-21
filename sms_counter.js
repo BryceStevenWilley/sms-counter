@@ -59,11 +59,11 @@ javascript: (function () {
     var num = event.target.value.length;
     numCharsNode.innerText = num;
 
+    msg_length = 160;
     if ( num > 160 ) {
-      numMsgsNode.innerText = Math.round( (num/147 ) * 100 ) / 100;
-    } else {
-      numMsgsNode.innerText =  Math.round( (num/160 ) * 100 ) / 100;;
+      msg_length = 147;
     }
+    numMsgsNode.innerText = `${Math.ceil(num / msg_length)} (${msg_length - (num % msg_length)} characters til next message)`
   }
 
   var textarea = document.getElementById( 'outgoing_text_message_body' );
