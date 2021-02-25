@@ -75,6 +75,8 @@ javascript: (function () {
     // Could be on the "Take Action" page
     textarea = document.getElementById( 'hub_take_action_form_message_body' );
   }
+  
+  gyr_calc_num_messages({ target: area });  // Text might already be in the text area
   textarea.addEventListener( 'input', gyr_calc_num_messages );
 
 
