@@ -67,7 +67,7 @@ javascript: (function () {
     if ( num > 160 ) {
       msg_length = 147;
     }
-    numMsgsNode.innerText = `${Math.ceil(num / msg_length)} (${msg_length - (num % msg_length)} characters til next message)`
+    numMsgsNode.innerText = `${Math.ceil(num / msg_length)} (${msg_length - (num % msg_length)} characters till next message)`
   }
 
   var textarea = document.getElementById( 'outgoing_text_message_body' );
@@ -75,6 +75,8 @@ javascript: (function () {
     // Could be on the "Take Action" page
     textarea = document.getElementById( 'hub_take_action_form_message_body' );
   }
+  
+  gyr_calc_num_messages({ target: area });  // Text might already be in the text area
   textarea.addEventListener( 'input', gyr_calc_num_messages );
 
 
