@@ -23,10 +23,11 @@ javascript: (function () {
 
   // Otherwise add the message counter element to the page
   var gyrContainer = document.querySelector( '.text-message-form .form-group' );
-  console.log(textarea);
+  console.log(`The text area on the messages screen is: ${ gyrContainer }`);
   if (gyrContainer === null) {
     // Could be on the "Take Action" page
     gyrContainer = document.querySelector( '#hub_take_action_form_message_body' ).parentElement;
+    console.log(`The text area on the Take Action screen is: ${ gyrContainer }`)
   }
 
   var countContainer = document.createElement( 'div' );
@@ -76,7 +77,7 @@ javascript: (function () {
     textarea = document.getElementById( 'hub_take_action_form_message_body' );
   }
   
-  gyr_calc_num_messages({ target: area });  // Text might already be in the text area
+  gyr_calc_num_messages({ target: textarea });  // Text might already be in the text area
   textarea.addEventListener( 'input', gyr_calc_num_messages );
 
 
